@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		982CD14227DF566600D3E93F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CD14127DF566600D3E93F /* SignupViewController.swift */; };
 		98554A5827D5CE0C004DB937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98554A5727D5CE0C004DB937 /* AppDelegate.swift */; };
 		98554A5A27D5CE0C004DB937 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98554A5927D5CE0C004DB937 /* SceneDelegate.swift */; };
-		98554A5C27D5CE0C004DB937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98554A5B27D5CE0C004DB937 /* ViewController.swift */; };
 		98554A5F27D5CE0C004DB937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98554A5D27D5CE0C004DB937 /* Main.storyboard */; };
 		98554A6127D5CE0E004DB937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98554A6027D5CE0E004DB937 /* Assets.xcassets */; };
 		98554A6427D5CE0E004DB937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98554A6227D5CE0E004DB937 /* LaunchScreen.storyboard */; };
+		98554A6C27D5D687004DB937 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98554A6B27D5D687004DB937 /* LoginViewController.swift */; };
+		98554A6E27D5D693004DB937 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98554A6D27D5D693004DB937 /* MainViewController.swift */; };
+		98554A7027D5DBBE004DB937 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98554A6F27D5DBBE004DB937 /* Property List.plist */; };
+		98554A7227D5E045004DB937 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98554A7127D5E044004DB937 /* Weather.swift */; };
+		987CA36527DF315B006181A9 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CA36427DF315B006181A9 /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		982CD14127DF566600D3E93F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		98554A5427D5CE0C004DB937 /* nowmusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nowmusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98554A5727D5CE0C004DB937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98554A5927D5CE0C004DB937 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98554A5B27D5CE0C004DB937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98554A5E27D5CE0C004DB937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98554A6027D5CE0E004DB937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98554A6327D5CE0E004DB937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98554A6527D5CE0E004DB937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98554A6B27D5D687004DB937 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98554A6D27D5D693004DB937 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		98554A6F27D5DBBE004DB937 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		98554A7127D5E044004DB937 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		987CA36427DF315B006181A9 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				98554A5727D5CE0C004DB937 /* AppDelegate.swift */,
 				98554A5927D5CE0C004DB937 /* SceneDelegate.swift */,
-				98554A5B27D5CE0C004DB937 /* ViewController.swift */,
 				98554A5D27D5CE0C004DB937 /* Main.storyboard */,
+				98554A6B27D5D687004DB937 /* LoginViewController.swift */,
+				98554A6D27D5D693004DB937 /* MainViewController.swift */,
+				982CD14127DF566600D3E93F /* SignupViewController.swift */,
+				987CA36427DF315B006181A9 /* PreviewView.swift */,
 				98554A6027D5CE0E004DB937 /* Assets.xcassets */,
 				98554A6227D5CE0E004DB937 /* LaunchScreen.storyboard */,
 				98554A6527D5CE0E004DB937 /* Info.plist */,
+				98554A6F27D5DBBE004DB937 /* Property List.plist */,
+				98554A7127D5E044004DB937 /* Weather.swift */,
 			);
 			path = nowmusic;
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 			files = (
 				98554A6427D5CE0E004DB937 /* LaunchScreen.storyboard in Resources */,
 				98554A6127D5CE0E004DB937 /* Assets.xcassets in Resources */,
+				98554A7027D5DBBE004DB937 /* Property List.plist in Resources */,
 				98554A5F27D5CE0C004DB937 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98554A5C27D5CE0C004DB937 /* ViewController.swift in Sources */,
+				98554A6C27D5D687004DB937 /* LoginViewController.swift in Sources */,
+				982CD14227DF566600D3E93F /* SignupViewController.swift in Sources */,
 				98554A5827D5CE0C004DB937 /* AppDelegate.swift in Sources */,
 				98554A5A27D5CE0C004DB937 /* SceneDelegate.swift in Sources */,
+				98554A6E27D5D693004DB937 /* MainViewController.swift in Sources */,
+				98554A7227D5E045004DB937 /* Weather.swift in Sources */,
+				987CA36527DF315B006181A9 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
