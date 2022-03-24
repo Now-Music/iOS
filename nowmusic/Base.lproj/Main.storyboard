@@ -186,17 +186,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날씨 로딩 중" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06o-o8-xNE">
-                                <rect key="frame" x="20" y="191" width="350" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="ktc-Ga-zyr"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기분 태그를 클릭하세요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06o-o8-xNE">
+                                <rect key="frame" x="20" y="191" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-IS-tNd" customClass="PreviewView" customModule="nowmusic" customModuleProvider="target">
-                                <rect key="frame" x="20" y="231.5" width="374" height="300"/>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-IS-tNd" customClass="PreviewView" customModule="nowmusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="413" width="374" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="TyK-oM-9mf"/>
@@ -207,12 +204,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5U7-uI-d7p" firstAttribute="leading" secondItem="xoh-OX-5e8" secondAttribute="leading" constant="30" id="0Bs-yO-4cd"/>
-                            <constraint firstItem="mh7-IS-tNd" firstAttribute="top" secondItem="06o-o8-xNE" secondAttribute="bottom" constant="20" id="1bw-fj-RAh"/>
                             <constraint firstItem="06o-o8-xNE" firstAttribute="top" secondItem="5U7-uI-d7p" secondAttribute="bottom" constant="20" id="NzM-3w-Vya"/>
                             <constraint firstItem="06o-o8-xNE" firstAttribute="leading" secondItem="xoh-OX-5e8" secondAttribute="leading" constant="20" id="SA0-gi-Fmi"/>
+                            <constraint firstItem="xoh-OX-5e8" firstAttribute="bottom" secondItem="mh7-IS-tNd" secondAttribute="bottom" constant="100" id="aPA-g2-pgw"/>
                             <constraint firstItem="xoh-OX-5e8" firstAttribute="trailing" secondItem="mh7-IS-tNd" secondAttribute="trailing" constant="20" id="dwl-So-dUc"/>
                             <constraint firstItem="mh7-IS-tNd" firstAttribute="leading" secondItem="xoh-OX-5e8" secondAttribute="leading" constant="20" id="kYV-p1-dI4"/>
                             <constraint firstItem="5U7-uI-d7p" firstAttribute="top" secondItem="xoh-OX-5e8" secondAttribute="top" id="sSR-Vk-vMe"/>
+                            <constraint firstItem="xoh-OX-5e8" firstAttribute="trailing" secondItem="06o-o8-xNE" secondAttribute="trailing" constant="20" id="tOP-9n-Zky"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="메인" id="VSr-sN-oMi"/>
