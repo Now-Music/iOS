@@ -9,6 +9,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var exerciseButton: UIButton!
     @IBOutlet weak var studyButton: UIButton!
     @IBOutlet weak var travelButton: UIButton!
+    @IBOutlet weak var convertedLocationLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     
     @IBOutlet weak var previewView: PreviewView!
@@ -25,7 +26,7 @@ class MainViewController: UIViewController {
     var latitude:Double?
     var longitude:Double?
     
-    var weatherString:String=""
+
     
     let captureSession = AVCaptureSession()
     var videoDeviceInput:AVCaptureDeviceInput!
@@ -104,10 +105,10 @@ class MainViewController: UIViewController {
     private func initialUI(){
         self.tabBarController?.tabBar.isHidden = false
         
-        self.restButton.layer.cornerRadius = 15
-        self.exerciseButton.layer.cornerRadius = 15
-        self.studyButton.layer.cornerRadius = 15
-        self.travelButton.layer.cornerRadius = 15
+        self.restButton.layer.cornerRadius = 17
+        self.exerciseButton.layer.cornerRadius = 17
+        self.studyButton.layer.cornerRadius = 17
+        self.travelButton.layer.cornerRadius = 17
         
         self.restButton.alpha =  0.3
         self.exerciseButton.alpha =  0.3
@@ -149,7 +150,7 @@ extension MainViewController: CLLocationManagerDelegate{
                         // 주소를 String으로
                         let locationString = String("\(address.last!.administrativeArea!) \(address.last!.locality!) \(address.last!.thoroughfare!)")
                         print(locationString)
-                        self.weatherString = locationString
+                        self.convertedLocationLabel.text = locationString
                     }
                 })
             }
@@ -179,12 +180,11 @@ extension MainViewController{
             if let response = try? decoder.decode(TodayResponse.self, from: resultData){
                 //                print("today : \(response)")
                 print(response.current.weather[0].main)
-                self.weatherString += " : \(response.current.weather[0].main)"
-                
-                self.sendString(encodedString: response.current.weather[0].main) // send to Server
-                DispatchQueue.main.sync {
-                    self.weatherLabel.text = self.weatherString
+                DispatchQueue.main.async{
+                self.weatherLabel.text = " \(response.current.weather[0].main)"
                 }
+                self.sendString(encodedString: response.current.weather[0].main) // send to Server
+                
                 
             }
             
