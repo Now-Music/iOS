@@ -226,7 +226,13 @@
                             <constraint firstItem="5U7-uI-d7p" firstAttribute="top" secondItem="xoh-OX-5e8" secondAttribute="top" id="sSR-Vk-vMe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="메인" id="VSr-sN-oMi"/>
+                    <navigationItem key="navigationItem" title="메인" id="VSr-sN-oMi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="NG6-7P-q3O">
+                            <connections>
+                                <action selector="cameraButtonTapped:" destination="Bp9-v5-GLX" id="9Ta-mZ-Jhi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="convertedLocationLabel" destination="Wb7-lm-YWc" id="jMA-AD-d00"/>
                         <outlet property="exerciseButton" destination="eVN-Iy-QoQ" id="ar9-vB-TAQ"/>
