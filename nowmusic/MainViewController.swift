@@ -48,8 +48,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialUI()
+        self.requestAuthorization()
         
-        pictureBase64 = self.getBase64()
+//        pictureBase64 = self.getBase64()
         previewView.session = captureSession
         sessionQueue.async {
             self.setupSession()
@@ -101,7 +102,7 @@ class MainViewController: UIViewController {
         }
         print(restCheck, exerciseCheck, studyCheck, travelCheck)
         self.weatherLabel.text = "로딩 중"
-        
+        capturePhoto()
     }
     @IBAction func cameraButtonTapped(_ sender: UIBarButtonItem) {
         self.capturePhoto()
@@ -209,7 +210,7 @@ extension MainViewController{
         } else{
             stateString = "travel"
         }
-        let dic:Dictionary = ["user_id": "yoonjong", "weather" : encodedString, "month": "3", "state" : stateString, "picture_base64" : getBase64()]
+        let dic:Dictionary = ["user_id": "yoonjong", "weather" : encodedString, "month": "4", "state" : stateString, "picture_base64" : pictureBase64]
         print("--> dic : ", dic["user_id"], dic["weather"], dic["state"], dic["month"])
         
         
@@ -354,6 +355,12 @@ extension MainViewController:AVCapturePhotoCaptureDelegate{ // camera 관련 세
         
         self.imageToBase64(image: image)
     }
+    
+    // for silent camera
+    func photoOutput(_ output: AVCapturePhotoOutput, willCapturePhotoFor resolvedSettings: AVCaptureResolvedPhotoSettings) {
+        AudioServicesDisposeSystemSoundID(1108)
+    }
+    
     func imageToBase64(image: UIImage){
         let imageData:NSData = image.jpegData(compressionQuality: 0.1)! as NSData
         let strBase64 = imageData.base64EncodedString()
